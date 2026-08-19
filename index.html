@@ -111,6 +111,19 @@
     flex-direction: column;
     align-items: center;
   }
+  .hero-mark {
+    width: 148px;
+    height: auto;
+    margin-bottom: 28px;
+  }
+  .hero-mark path,
+  .hero-mark circle {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
   .hero h1 {
     font-size: clamp(2rem, 4.4vw, 3rem);
     font-weight: 700;
@@ -262,6 +275,23 @@
 
 <section class="hero">
   <div class="shell">
+    <svg class="hero-mark" viewBox="30 20 260 150" aria-hidden="true">
+      <path d="M 78,78 Q 46,86 44,120 Q 43,148 68,158 Q 60,130 66,104 Q 70,88 78,78 Z" />
+      <path d="M 138,78 Q 168,88 172,122 Q 174,150 150,160 Q 156,132 150,106 Q 146,88 138,78 Z" />
+      <circle cx="108" cy="112" r="46" />
+      <path d="M 90,140 Q 108,150 126,140" />
+      <path d="M 90,104 Q 96,98 102,104" />
+      <path d="M 114,104 Q 120,98 126,104" />
+      <path d="M 196,68 L 182,32 L 210,58 Z" />
+      <path d="M 236,68 L 250,32 L 222,58 Z" />
+      <circle cx="216" cy="104" r="44" />
+      <path d="M 200,98 Q 206,92 212,98" />
+      <path d="M 222,98 Q 228,92 234,98" />
+      <path d="M 178,108 L 154,104" />
+      <path d="M 178,114 L 154,116" />
+      <path d="M 254,108 L 278,104" />
+      <path d="M 254,114 L 278,116" />
+    </svg>
     <h1>아이에겐 당신이 세상의 전부입니다</h1>
     <p>품종과 나이, 건강 상태를 알려주시면 광고가 아닌<br>진짜 맞는 제품만 골라드려요.</p>
     <!-- TODO: 아래 href를 실제 구글 폼 링크로 교체하세요 -->
