@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>포온 (PawON) — 우리 아이 맞춤 추천</title>
+<meta name="description" content="포온은 반려동물의 품종, 나이, 건강 상태에 맞춘 사료·간식·용품 추천 플랫폼입니다. 아이들에게 당신은 세상의 전부입니다. 포온은 그 선택을 함께합니다.">
+<style>
+  :root {
+    --bg: #F5F3EF;
+    --fg: #111111;
+    --accent: #E86A5C;
+    --muted: #6B6660;
+    --card-bg: #FFFFFF;
+    --border: #E5E1DA;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: var(--fg); }
+
+  .hero {
+    padding: 96px 0 72px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+  .hero p.tagline {
+    font-size: 1.15rem;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto 36px;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--fg);
+    color: var(--bg);
+    padding: 16px 36px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+  }
+  .cta:hover { opacity: 0.85; }
+
+  .mission {
+    padding: 48px 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .mission p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .features {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+  }
+  .feature {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 24px;
+  }
+  .feature .icon { font-size: 1.8rem; margin-bottom: 14px; }
+  .feature h3 { font-size: 1.1rem; margin-bottom: 8px; }
+  .feature p { color: var(--muted); font-size: 0.95rem; }
+
+  footer {
+    padding: 40px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">포온</div>
+    <nav>
+      <a href="#features">서비스 소개</a>
+      <a href="#mission">브랜드 철학</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>우리 아이에게<br>딱 맞는 선택을 찾아드려요</h1>
+    <p class="tagline">품종, 나이, 건강 상태를 기반으로 사료·간식·영양제·용품을 추천하는 반려동물 맞춤 큐레이션 서비스, 포온.</p>
+    <a class="cta" href="#features">서비스 살펴보기</a>
+  </div>
+</section>
+
+<section class="mission" id="mission">
+  <div class="wrap">
+    <p>"아이들에게 당신은 세상의 전부입니다.<br>포온은 그 선택을 함께합니다."</p>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap features">
+    <div class="feature">
+      <div class="icon">🐾</div>
+      <h3>맞춤 프로필</h3>
+      <p>품종, 나이, 몸무게, 건강 고민을 입력하면 우리 아이만을 위한 추천이 시작돼요.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">✅</div>
+      <h3>신뢰할 수 있는 추천</h3>
+      <p>광고비가 아닌 성분과 궁합을 기준으로, 진짜 잘 맞는 제품만 골라드려요.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">💰</div>
+      <h3>가격 비교</h3>
+      <p>여러 쇼핑몰의 가격을 한눈에 비교하고, 가장 합리적인 곳에서 구매하세요.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    &copy; 2026 포온 (PawON). All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
